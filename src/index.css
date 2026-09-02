@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Tajawal:wght@400;500;700&display=swap");
+
+:root {
+  --green-dark: #16453a;
+  --green: #1c5a48;
+  --green-light: #e8f2ec;
+  --gold: #c9a961;
+  --cream: #faf6ee;
+  --cream-2: #f3ede0;
+  --text-dark: #16302a;
+  --text-body: #5f6b66;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cairo", "Tajawal", sans-serif;
+  color: var(--text-dark);
+  margin: 0;
+  direction: rtl;
+  text-align: right;
+}

@@ -1,0 +1,203 @@
+.rawdaNavbar {
+  background: #ffffff;
+  padding: 16px 0;
+  box-shadow: 0 2px 14px rgba(22, 69, 58, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.rawdaNavbar .navbarInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+/* Logo */
+.rawdaBrand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.rawdaBrand .brandIcon {
+  width: 46px;
+  height: 46px;
+  color: var(--green-dark);
+  flex-shrink: 0;
+}
+
+.rawdaBrand .brandText h1 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--green-dark);
+  margin: 0;
+  line-height: 1.25;
+}
+
+.rawdaBrand .brandText span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--green);
+  display: block;
+}
+
+/* Nav links */
+.rawdaNavLinks {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.rawdaNavLinks a {
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding-bottom: 6px;
+  position: relative;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -ms-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+}
+
+.rawdaNavLinks a:hover {
+  color: #d1a505;
+}
+
+.rawdaNavLinks a.active {
+  color: var(--green-dark);
+}
+
+.rawdaNavLinks a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  left: 0;
+  height: 3px;
+  border-radius: 3px;
+  background: var(--green-dark);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+/* Phone / WhatsApp pill */
+.rawdaPhonePill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--green-light);
+  border-radius: 999px;
+  padding: 10px 18px;
+  color: var(--green-dark);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: background 0.2s ease;
+  direction: ltr;
+  -webkit-transition: background 0.2s ease;
+  -moz-transition: background 0.2s ease;
+  -ms-transition: background 0.2s ease;
+  -o-transition: background 0.2s ease;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  -ms-border-radius: 999px;
+  -o-border-radius: 999px;
+}
+
+.rawdaPhonePill:hover {
+  background: #dcebe2;
+  color: var(--green-dark);
+}
+
+.rawdaPhonePill i {
+  font-size: 1.1rem;
+  color: #25d366;
+}
+
+/* Mobile toggle */
+.rawdaNavToggle {
+  display: none;
+  background: var(--green-light);
+  border: none;
+  border-radius: 10px;
+  padding: 8px 12px;
+  color: var(--green-dark);
+  font-size: 1.3rem;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+@media (max-width: 991px) {
+  .rawdaNavLinks {
+    display: none;
+    width: 100%;
+    order: 3;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding-top: 16px;
+    border-top: 1px solid #eee;
+    margin-top: 14px;
+  }
+  .rawdaNavLinks.open {
+    display: flex;
+  }
+
+  .rawdaNavbar .navbarInner {
+    flex-wrap: wrap;
+  }
+
+  .rawdaNavbar .rawdaNavToggle {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+/* WhatsApp button on mobile */
+.mobileWhatsapp {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .rawdaPhonePill {
+    display: none;
+  }
+
+  .mobileWhatsapp {
+    display: flex;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 58px;
+    height: 58px;
+    align-items: center;
+    justify-content: center;
+    background: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.8rem;
+    z-index: 2000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .mobileWhatsapp:hover {
+    color: #fff;
+  }
+}

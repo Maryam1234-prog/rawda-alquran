@@ -1,0 +1,253 @@
+.gallerySection {
+  background: #f8f4e9;
+  padding: 90px 0;
+  overflow: hidden;
+}
+
+/* ================= CONTAINER ================= */
+
+.galleryContainer {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* ================= HEADER ================= */
+
+.galleryHeader {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.galleryEyebrow {
+  color: #c9a961;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.galleryHeader h2 {
+  color: #16453a;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.galleryHeader p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* ================= GALLERY ================= */
+
+.galleryArea {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.galleryViewport {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  padding: 20px 0 30px;
+}
+
+.galleryTrack {
+  display: flex;
+  direction: ltr;
+  width: 100%;
+  transform: translateX(calc(var(--active) * -20%));
+  transition: transform 0.6s ease;
+}
+
+/* ================= CARD ================= */
+
+.galleryCard {
+  flex: 0 0 20%;
+  padding: 0 8px;
+  direction: rtl;
+}
+
+.imageFrame {
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  padding: 8px;
+  border: 2px solid #c9a961;
+  border-radius: 24px;
+  box-shadow: 0 12px 25px rgba(22, 69, 58, 0.15);
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
+}
+
+/* الطبقة الداخلية */
+
+.imageFrame::before {
+  content: "";
+
+  position: absolute;
+  inset: 5px;
+
+  border: 1px solid rgba(201, 169, 97, 0.45);
+  border-radius: 18px;
+
+  pointer-events: none;
+}
+
+/* ================= IMAGE ================= */
+
+.imageFrame img {
+  display: block;
+
+  width: 100%;
+  height: 340px;
+
+  object-fit: cover;
+
+  border-radius: 17px;
+}
+
+/* ================= HOVER ================= */
+
+.galleryCard:hover .imageFrame {
+  transform: translateY(-8px);
+
+  box-shadow: 0 20px 35px rgba(22, 69, 58, 0.22);
+}
+
+/* ================= ARROWS ================= */
+
+.galleryArrow {
+  flex-shrink: 0;
+
+  width: 52px;
+  height: 52px;
+
+  border: 2px solid #c9a961;
+  border-radius: 50%;
+
+  background: #16453a;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.galleryArrow:hover {
+  background: #c9a961;
+  color: #16453a;
+}
+
+/* ================= COUNTER ================= */
+
+.galleryCounter {
+  text-align: center;
+
+  margin-top: 15px;
+
+  color: #16453a;
+
+  font-weight: 600;
+}
+
+/* ================================================= */
+/*                    TABLET                         */
+/* ================================================= */
+
+@media (max-width: 1100px) {
+  .galleryTrack {
+    transform: translateX(calc(var(--active) * -33.3333%));
+  }
+
+  .galleryCard {
+    flex: 0 0 33.3333%;
+    padding: 0 6px;
+  }
+
+  .imageFrame img {
+    height: 300px;
+  }
+
+  .galleryArrow {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* ================================================= */
+/*                    MOBILE                         */
+/* ================================================= */
+
+@media (max-width: 767px) {
+  .gallerySection {
+    padding: 60px 0;
+  }
+
+  .galleryContainer {
+    padding: 0 20px;
+  }
+
+  .galleryHeader {
+    margin-bottom: 30px;
+  }
+
+  .galleryHeader h2 {
+    font-size: 28px;
+  }
+
+  .galleryHeader p {
+    font-size: 14px;
+  }
+
+  .galleryArea {
+    gap: 8px;
+  }
+
+  .galleryViewport {
+    padding: 15px 0 25px;
+  }
+  /* كارت واحد فقط في كل مرة */
+  @media (max-width: 767px) {
+    .galleryTrack {
+      transform: translateX(calc(var(--active) * -100%));
+      -webkit-transform: translateX(calc(var(--active) * -100%));
+      -moz-transform: translateX(calc(var(--active) * -100%));
+      -ms-transform: translateX(calc(var(--active) * -100%));
+      -o-transform: translateX(calc(var(--active) * -100%));
+    }
+
+    .galleryCard {
+      flex: 0 0 100%;
+      padding: 0 4px;
+    }
+
+    .imageFrame img {
+      height: 330px;
+    }
+  }
+
+  .imageFrame img {
+    height: 330px;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+  }
+
+  .galleryArrow {
+    width: 40px;
+    height: 40px;
+  }
+}

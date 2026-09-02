@@ -1,0 +1,264 @@
+.rawdaAbout {
+  background: #ffffff;
+  padding: 90px 0;
+}
+
+.rawdaAbout .aboutGrid {
+  display: grid;
+  grid-template-columns: 0.85fr 1fr;
+  gap: 56px;
+  align-items: stretch;
+}
+
+/* ---- Image column (right side, full section height) ---- */
+.aboutImage {
+  order: 1; /* first in DOM + rtl row => sits on the right */
+  position: relative;
+}
+
+.aboutImage .aboutImageFrame {
+  position: relative;
+  height: 100%;
+  min-height: 420px;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 24px 50px -20px rgba(22, 69, 58, 0.28);
+}
+
+.aboutImage .aboutImageFrame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.aboutImage .aboutImageFrame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 6px solid #fff;
+  border-radius: 28px;
+  outline: 1px solid var(--gold, #c9a961);
+  outline-offset: -14px;
+  pointer-events: none;
+}
+
+/* ---- Content column ---- */
+.aboutContent {
+  order: 2;
+}
+
+.aboutEyebrow {
+  color: var(--gold, #c9a961);
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 6px;
+}
+
+.aboutContent h2 {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: var(--green-dark, #16453a);
+  margin-bottom: 18px;
+}
+
+.aboutContent > p {
+  color: var(--text-body, #5f6b66);
+  line-height: 2;
+  font-size: 1rem;
+  margin-bottom: 32px;
+}
+
+/* Vision / Mission cards */
+.aboutVmRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 44px;
+}
+
+.aboutVmCard {
+  border: 1.5px dashed #d9cfa9;
+  border-radius: 18px;
+  padding: 22px 20px;
+  background: #fdfbf5;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+}
+
+.aboutVmCard .vmIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--green-light, #e8f2ec);
+  color: var(--green-dark, #16453a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+}
+
+.aboutVmCard h3 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--green-dark, #16453a);
+  margin-bottom: 10px;
+}
+
+.aboutVmCard p {
+  font-size: 0.9rem;
+  line-height: 1.9;
+  color: var(--text-body, #5f6b66);
+  margin: 0;
+}
+
+/* Why us */
+/* .aboutWhyus h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--green-dark, #16453a);
+  margin-bottom: 26px;
+} */
+
+/* .aboutWhyusList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+} */
+
+/* .aboutWhyusItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 110px;
+} */
+
+/* .aboutWhyusItem .whyus-icon { 
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  border: 2px solid var(--gold, #c9a961);
+  background: var(--green-light, #e8f2ec);
+  color: var(--green-dark, #16453a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.aboutWhyusItem span {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-dark, #16302a);
+  line-height: 1.5;
+}
+  */
+@media (max-width: 991px) {
+  .rawdaAbout {
+    padding: 50px 0;
+  }
+
+  .rawdaAbout .aboutGrid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  /* ترتيب المحتوى في الموبايل */
+  .aboutContent {
+    order: 1;
+    display: contents;
+  }
+
+  /* كلمة من نحن تظهر فوق الصورة */
+  .aboutEyebrow {
+    order: 1;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  /* الصورة */
+  .aboutImage {
+    order: 2;
+    width: 100%;
+  }
+
+  .aboutImage .aboutImageFrame {
+    min-height: 320px;
+    height: 320px;
+    border-radius: 24px;
+  }
+
+  .aboutImage .aboutImageFrame::after {
+    border-radius: 24px;
+  }
+
+  /* العنوان والوصف بعد الصورة */
+  .aboutContent h2 {
+    order: 3;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  .aboutContent > p {
+    order: 4;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.9;
+    margin-bottom: 25px;
+  }
+
+  /* رؤيتنا ورسالتنا */
+  .aboutVmRow {
+    order: 5;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .aboutVmCard {
+    text-align: center;
+    padding: 18px 12px;
+  }
+
+  /* الأيقونة في المنتصف */
+  .aboutVmCard .vmIcon {
+    margin: 0 auto 12px;
+  }
+
+  .aboutVmCard h3 {
+    text-align: center;
+  }
+
+  .aboutVmCard p {
+    text-align: center;
+    font-size: 0.85rem;
+    line-height: 1.8;
+  }
+
+  /* لو عندك لماذا نحن بعدين */
+  /* .aboutWhyus {
+    order: 6;
+    text-align: center;
+  } */
+
+  /* .aboutWhyus h3 {
+    text-align: center;
+  } */
+
+  /* .aboutWhyusList {
+    justify-content: center;
+  } */
+}

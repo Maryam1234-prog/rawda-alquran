@@ -1,0 +1,484 @@
+.rawdaServices {
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(201, 169, 97, 0.08) 0,
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(22, 69, 58, 0.06) 0,
+      transparent 28%
+    ),
+    #f8f4e9;
+  padding: 90px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* =========================
+   Section Decorations
+========================= */
+
+.rawdaServices::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  top: -140px;
+  right: -100px;
+  border: 1px solid rgba(201, 169, 97, 0.15);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.rawdaServices::after {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  bottom: -120px;
+  left: -90px;
+  border: 1px solid rgba(22, 69, 58, 0.08);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* =========================
+   Container
+========================= */
+
+.container {
+  padding-left: 25px;
+  padding-right: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================
+   Section Header
+========================= */
+
+.rawdaServices .servicesHeader {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 52px;
+}
+
+.rawdaServices .servicesEyebrow {
+  color: var(--gold, #c9a961);
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+.rawdaServices .servicesHeader h2 {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: var(--green-dark, #16453a);
+  margin-bottom: 14px;
+}
+
+.rawdaServices .servicesHeader p {
+  color: var(--text-body, #5f6b66);
+  line-height: 1.9;
+}
+
+/* =========================
+   Desktop Grid
+========================= */
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+/* =========================
+   Service Card
+========================= */
+
+.serviceCard {
+  position: relative;
+  background: var(--green-dark, #16453a);
+  border: 1px solid rgba(201, 169, 97, 0.45);
+  border-radius: 24px;
+  padding: 40px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 500px;
+  box-shadow: 0 20px 45px -25px rgba(22, 69, 58, 0.45);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  -webkit-transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  -moz-transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  -ms-transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  -o-transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+}
+
+/* =========================
+   Inner Frame
+========================= */
+
+.serviceCard::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border: 1px solid rgba(201, 169, 97, 0.35);
+  border-radius: 18px;
+  pointer-events: none;
+}
+
+/* =========================
+   Card Hover
+========================= */
+
+.serviceCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 28px 55px -24px rgba(22, 69, 58, 0.55);
+  border-color: var(--gold, #c9a961);
+  -webkit-transform: translateY(-8px);
+  -moz-transform: translateY(-8px);
+  -ms-transform: translateY(-8px);
+  -o-transform: translateY(-8px);
+}
+
+/* =========================
+   Icon
+========================= */
+
+.serviceCard .serviceIcon {
+  width: 78px;
+  height: 78px;
+  margin: 0 auto 22px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: var(--green-dark, #16453a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 10px 24px -8px rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================
+   Number Badge
+========================= */
+
+.serviceCard .serviceBadge {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1.5px solid var(--gold, #c9a961);
+  color: var(--gold, #c9a961);
+  font-weight: 800;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+/* =========================
+   Card Title
+========================= */
+
+.serviceCard h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================
+   Card Description
+========================= */
+
+.serviceCard p {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.94rem;
+  line-height: 1.9;
+  margin-bottom: 22px;
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================
+   Features
+========================= */
+
+.serviceCard .serviceFeatures {
+  list-style: none;
+  margin: 0 0 26px;
+  padding: 0;
+  text-align: right;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.serviceCard .serviceFeatures li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.serviceCard .serviceFeatures li i {
+  color: var(--gold, #c9a961);
+  font-size: 1rem;
+}
+
+/* =========================
+   Free Trial Button
+========================= */
+
+.serviceCard .serviceLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: auto;
+  padding: 11px 24px;
+  background: #ffffff;
+  color: var(--green-dark, #16453a);
+  font-weight: 800;
+  font-size: 0.92rem;
+  text-decoration: none;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease,
+    border-color 0.25s ease;
+  position: relative;
+  z-index: 1;
+  -webkit-transition:;
+  -moz-transition:;
+  -ms-transition:;
+  -o-transition:;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  -ms-border-radius: 999px;
+  -o-border-radius: 999px;
+}
+
+.serviceCard .serviceLink i {
+  color: var(--green-dark, #16453a);
+  transition: transform 0.25s ease;
+  -webkit-transition:;
+  -moz-transition:;
+  -ms-transition:;
+  -o-transition:;
+}
+
+.serviceCard .serviceLink:hover {
+  background: var(--gold, #c9a961);
+  color: #ffffff;
+  border-color: var(--gold, #c9a961);
+}
+
+.serviceCard .serviceLink:hover i {
+  color: #ffffff;
+}
+
+/* =========================
+   Mobile Carousel
+========================= */
+
+.servicesCarouselWrap {
+  display: none;
+}
+
+.servicesTrack {
+  display: flex;
+  direction: ltr;
+  transition: transform 0.4s ease;
+  -webkit-transition: transform 0.4s ease;
+  -moz-transition: transform 0.4s ease;
+  -ms-transition: transform 0.4s ease;
+  -o-transition: transform 0.4s ease;
+}
+
+.servicesTrack .serviceCard {
+  min-width: 100%;
+  direction: rtl;
+}
+
+/* =========================
+   Carousel Controls
+========================= */
+
+.servicesCarouselControls {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 26px;
+}
+
+.servicesCarouselControls button {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1.5px solid var(--green-dark, #16453a);
+  background: #ffffff;
+  color: var(--green-dark, #16453a);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transition:
+    background 0.2s ease,
+    color 0.2s ease;
+  -moz-transition:
+    background 0.2s ease,
+    color 0.2s ease;
+  -ms-transition:
+    background 0.2s ease,
+    color 0.2s ease;
+  -o-transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.servicesCarouselControls button:hover:not(:disabled) {
+  background: var(--green-dark, #16453a);
+  color: #ffffff;
+}
+
+.servicesCarouselControls button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+/* =========================
+   Carousel Dots
+========================= */
+
+.servicesCarouselDots {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.servicesCarouselDots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e2dac0;
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.servicesCarouselDots span.active {
+  width: 22px;
+  border-radius: 5px;
+  background: var(--gold, #c9a961);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 767px) {
+  .rawdaServices {
+    padding: 65px 0;
+  }
+
+  .servicesGrid {
+    display: none;
+  }
+
+  .servicesCarouselWrap {
+    display: block;
+    overflow: hidden;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+  }
+
+  .servicesCarouselControls {
+    display: flex;
+  }
+
+  .serviceCard {
+    padding: 34px 24px;
+    min-height: 300px;
+  }
+
+  .serviceCard .serviceIcon {
+    width: 72px;
+    height: 72px;
+    font-size: 1.8rem;
+  }
+
+  .serviceCard h3 {
+    font-size: 1.15rem;
+  }
+
+  .serviceCard p {
+    font-size: 0.88rem;
+  }
+
+  .serviceCard .serviceFeatures li {
+    font-size: 0.84rem;
+  }
+}
