@@ -6,9 +6,7 @@
 
 .featuresSection {
   padding: 90px 0;
-  /* background: rgba(255, 255, 255, 0.92); */
-
-  background-color: #f8f4e9;
+  background: #f8f4e9;
   position: relative;
   overflow: hidden;
 }
