@@ -53,7 +53,7 @@ const features = [
 
 function OurFeatures() {
   return (
-    <section className={styles.featuresSection} dir="rtl">
+    <section className={styles.featuresSection} id="OurFeatures" dir="rtl">
       <div className={styles.featuresContainer}>
         {/* Section Header */}
         <div className={styles.sectionHeader}>

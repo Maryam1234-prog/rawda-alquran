@@ -67,7 +67,7 @@ export default function Gallery() {
   };
 
   return (
-    <section className={styles.gallerySection} dir="rtl">
+    <section className={styles.gallerySection} id="Gallery" dir="rtl">
       <div className={styles.galleryContainer}>
         {/* ================= HEADER ================= */}
 
