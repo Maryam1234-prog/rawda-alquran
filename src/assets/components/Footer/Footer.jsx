@@ -15,7 +15,7 @@ const SERVICE_LINKS = [
 ];
 
 const SOCIALS = [
-  { icon: "bi-whatsapp", href: "https://wa.me/966592719730", label: "واتساب" },
+  { icon: "bi-whatsapp", href: "https://wa.me/966", label: "واتساب" },
   { icon: "bi-instagram", href: "#", label: "إنستجرام" },
   { icon: "bi-twitter-x", href: "#", label: "إكس" },
   { icon: "bi-youtube", href: "#", label: "يوتيوب" },
