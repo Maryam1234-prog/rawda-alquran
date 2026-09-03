@@ -72,7 +72,7 @@ export default function Gallery() {
         {/* ================= HEADER ================= */}
 
         <div className={styles.galleryHeader}>
-          <div className={styles.galleryEyebrow}>معرضنا</div>
+          <div className={styles.smallTitle}>معرضنا</div>
 
           <h2>من أنشطة روضة القرآن</h2>
 

@@ -8,6 +8,7 @@ import Services from "./assets/components/Services/Services";
 // import Testimonials from "./assets/components/Testimonials/Testimonials";
 import Gallery from "./assets/components/Gallery/Gallery";
 import OurFeatures from "./assets/components/OurFeatures/OurFeatures";
+import Footer from "./assets/components/Footer/Footer";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
       {/* <Testimonials /> */}
       <Gallery />
       <OurFeatures />
+      <Footer />
     </>
   );
 }

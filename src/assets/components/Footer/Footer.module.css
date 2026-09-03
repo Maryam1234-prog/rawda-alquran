@@ -1,0 +1,218 @@
+.footer {
+  background: #123d2f;
+  color: #ffffff;
+  padding-top: 65px;
+  position: relative;
+}
+
+.footerContainer {
+  width: calc(100% - 80px);
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 60px;
+  padding-bottom: 50px;
+}
+
+/* =========================
+   Columns
+========================= */
+
+.footerColumn h3 {
+  color: #c9a961;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.footerColumn h3::after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 2px;
+  background: #c9a961;
+  margin-top: 10px;
+}
+
+/* =========================
+   Logo
+========================= */
+
+.footerLogo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 18px;
+}
+
+.description {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 15px;
+  line-height: 1.9;
+  max-width: 360px;
+}
+
+/* =========================
+   Links
+========================= */
+
+.footerLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLinks li {
+  margin-bottom: 13px;
+}
+
+.footerLinks a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.footerLinks a::before {
+  content: "‹";
+  color: #c9a961;
+  margin-left: 8px;
+}
+
+.footerLinks a:hover {
+  color: #c9a961;
+  padding-right: 5px;
+}
+
+/* =========================
+   Contact
+========================= */
+
+.contactItem {
+  margin-bottom: 20px;
+}
+
+.contactLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+.contactLink:hover {
+  color: #c9a961;
+}
+
+.contactLink i {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(201, 169, 97, 0.5);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #c9a961;
+  font-size: 17px;
+  flex-shrink: 0;
+}
+
+/* =========================
+   Bottom
+========================= */
+
+.footerBottom {
+  border-top: 1px solid rgba(201, 169, 97, 0.25);
+  text-align: center;
+  padding: 20px;
+}
+
+.footerBottom p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+}
+
+/* =========================
+   Tablet
+========================= */
+
+/* @media (max-width: 991px) {
+  .footerContainer {
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+  } 
+} */
+@media (max-width: 991px) {
+  .footerContainer {
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+  }
+
+  .footerContainer > .footerColumn:first-child {
+    display: none;
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 575px) {
+  .footer {
+    padding-top: 50px;
+  }
+
+  .footerContainer {
+    width: calc(100% - 40px);
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-bottom: 40px;
+  }
+
+  .footerColumn {
+    text-align: center;
+  }
+
+  .footerColumn h3::after {
+    margin: 10px auto 0;
+  }
+
+  .footerLogo {
+    width: 135px;
+  }
+
+  .description {
+    margin: 0 auto;
+  }
+
+  .socialLinks {
+    justify-content: center;
+  }
+
+  .footerLinks a::before {
+    display: none;
+  }
+
+  .contactItem {
+    justify-content: center;
+  }
+}
+
+.aboutColumn {
+  display: block;
+}

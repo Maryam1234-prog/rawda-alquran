@@ -7,8 +7,7 @@ const NAV_LINKS = [
   { label: "الخدمات", href: "#services" },
   { label: "الآراء", href: "#Gallery" },
   { label: "لماذا نحن", href: "#OurFeatures" },
-  { label: "الباقات", href: "#packages" },
-  { label: "المقالات", href: "#articles" },
+  { label: "الانجازات", href: "#articles" },
   { label: "تواصل معنا", href: "https://wa.me/201026858283" },
 ];
 

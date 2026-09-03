@@ -115,53 +115,6 @@
   margin: 0;
 }
 
-/* Why us */
-/* .aboutWhyus h3 {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--green-dark, #16453a);
-  margin-bottom: 26px;
-} */
-
-/* .aboutWhyusList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 28px;
-} */
-
-/* .aboutWhyusItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 110px;
-} */
-
-/* .aboutWhyusItem .whyus-icon { 
-  width: 66px;
-  height: 66px;
-  border-radius: 50%;
-  border: 2px solid var(--gold, #c9a961);
-  background: var(--green-light, #e8f2ec);
-  color: var(--green-dark, #16453a);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-
-.aboutWhyusItem span {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--text-dark, #16302a);
-  line-height: 1.5;
-}
-  */
 @media (max-width: 991px) {
   .rawdaAbout {
     padding: 50px 0;

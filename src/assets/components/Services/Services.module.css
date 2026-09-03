@@ -65,11 +65,30 @@
   margin: 0 auto 52px;
 }
 
-.rawdaServices .servicesEyebrow {
+/* .rawdaServices .servicesEyebrow {
   color: var(--gold, #c9a961);
   font-weight: 700;
   font-size: 2.5rem;
   margin-bottom: 8px;
+} */
+.rawdaServices .servicesEyebrow {
+  display: inline-block;
+  color: var(--gold, #c9a961);
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.rawdaServices .servicesEyebrow::before,
+.rawdaServices .servicesEyebrow::after {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 1px;
+  background: #c9a227;
+  vertical-align: middle;
+  margin: 0 12px;
 }
 
 .rawdaServices .servicesHeader h2 {
@@ -288,10 +307,6 @@
     border-color 0.25s ease;
   position: relative;
   z-index: 1;
-  -webkit-transition:;
-  -moz-transition:;
-  -ms-transition:;
-  -o-transition:;
   -webkit-border-radius: 999px;
   -moz-border-radius: 999px;
   -ms-border-radius: 999px;
@@ -301,10 +316,6 @@
 .serviceCard .serviceLink i {
   color: var(--green-dark, #16453a);
   transition: transform 0.25s ease;
-  -webkit-transition:;
-  -moz-transition:;
-  -ms-transition:;
-  -o-transition:;
 }
 
 .serviceCard .serviceLink:hover {
