@@ -20,7 +20,11 @@ const SOCIALS = [
   { icon: "bi-whatsapp", href: "https://wa.me/201026858283", label: "واتساب" },
   { icon: "bi-whatsapp", href: "https://wa.me/201030228494", label: "واتساب" },
   { icon: "bi-instagram", href: "#", label: "إنستجرام" },
-  { icon: "bi-twitter-x", href: "#", label: "إكس" },
+  {
+    icon: "bi-facebook",
+    href: "https://www.facebook.com/share/1HwQcPGfQc/?mibextid=qi2Omg",
+    label: "فيسبوك",
+  },
   { icon: "bi-youtube", href: "#", label: "يوتيوب" },
 ];
 
