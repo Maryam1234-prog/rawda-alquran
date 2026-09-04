@@ -220,7 +220,7 @@
 .bottomLinks a:hover {
   color: #fff;
 }
-
+/* 
 @media (max-width: 991px) {
   .top {
     grid-template-columns: 1fr 1fr;
@@ -237,5 +237,20 @@
   .bottom {
     justify-content: center;
     text-align: center;
+  }
+} */
+@media (max-width: 991px) {
+  .top {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .top > div:first-child {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .top {
+    grid-template-columns: 1fr;
   }
 }
