@@ -143,7 +143,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className={styles.bottom}>
+        <div className={styles.bottom} dir="ltr">
           <span>© {year} دار روضة القران. جميع الحقوق محفوظة.</span>
         </div>
       </div>

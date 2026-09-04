@@ -183,6 +183,10 @@
   justify-content: center;
   font-size: 0.95rem;
   flex-shrink: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .contactItem a:hover {
@@ -195,7 +199,7 @@
   z-index: 1;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
   padding: 24px 0;
