@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css";
-
+import { Link } from "react-router-dom";
 const QUICK_LINKS = [
   { label: "الرئيسية", href: "/#home", active: true },
   { label: "من نحن", href: "/#about" },
@@ -94,12 +94,27 @@ export default function Footer() {
           <div>
             <h4 className={styles.colTitle}>روابط سريعة</h4>
             <ul className={styles.linkList}>
-              {QUICK_LINKS.map((l) => (
+              {/* {QUICK_LINKS.map((l) => (
                 <li key={l.label}>
                   <a href={l.href}>
                     <i className="bi bi-caret-left-fill" />
                     {l.label}
                   </a>
+                </li>
+              ))} */}
+              {QUICK_LINKS.map((l) => (
+                <li key={l.label}>
+                  {l.href === "/achievements" ? (
+                    <Link to="/achievements">
+                      <i className="bi bi-caret-left-fill" />
+                      {l.label}
+                    </Link>
+                  ) : (
+                    <a href={l.href}>
+                      <i className="bi bi-caret-left-fill" />
+                      {l.label}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
