@@ -1,21 +1,24 @@
 import styles from "./Footer.module.css";
 
 const QUICK_LINKS = [
-  { label: "الرئيسية", href: "#home" },
-  { label: "من نحن", href: "#about" },
-  { label: "خدماتنا", href: "#services" },
-  { label: "الباقات", href: "#packages" },
-  { label: "المقالات", href: "#articles" },
+  { label: "الرئيسية", href: "#home", active: true },
+  { label: "من نحن", href: "/#about" },
+  { label: "خدماتنا", href: "/#services" },
+  { label: "الآراء", href: "/#Gallery" },
+  { label: "لماذا نحن", href: "/#OurFeatures" },
+  { label: "الانجازات", href: "/achievements" },
 ];
 
 const SERVICE_LINKS = [
-  { label: "حفظ القرآن الكريم", href: "#services" },
-  { label: "تلاوة وتجويد", href: "#services" },
-  { label: "حلقات الأطفال", href: "#audience" },
+  { label: "حفظ القرآن الكريم" },
+  { label: "تلاوة وتجويد" },
+  { label: "تعلم اللغه العربيه" },
+  { label: "حلقات الأطفال والبالغين" },
 ];
 
 const SOCIALS = [
-  { icon: "bi-whatsapp", href: "https://wa.me/966", label: "واتساب" },
+  { icon: "bi-whatsapp", href: "https://wa.me/201026858283", label: "واتساب" },
+  { icon: "bi-whatsapp", href: "https://wa.me/201030228494", label: "واتساب" },
   { icon: "bi-instagram", href: "#", label: "إنستجرام" },
   { icon: "bi-twitter-x", href: "#", label: "إكس" },
   { icon: "bi-youtube", href: "#", label: "يوتيوب" },
@@ -121,8 +124,16 @@ export default function Footer() {
                 <span className={styles.contactIcon}>
                   <i className="bi bi-telephone" />
                 </span>
-                <a href="tel:+2019999999" dir="ltr">
-                  +20 199 999 999
+                <a href="tel:+201026858283" dir="ltr">
+                  +20 102 685 8283
+                </a>
+              </li>
+              <li className={styles.contactItem}>
+                <span className={styles.contactIcon}>
+                  <i className="bi bi-telephone" />
+                </span>
+                <a href="tel:+201030228494" dir="ltr">
+                  +20 103 022 8494
                 </a>
               </li>
               <li className={styles.contactItem}>
