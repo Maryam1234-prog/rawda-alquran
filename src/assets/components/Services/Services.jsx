@@ -45,7 +45,7 @@ export default function Services() {
           </li>
         ))}
       </ul>
-      <a
+      {/* <a
         className={styles["serviceLink"]}
         href="https://wa.me/201026858283?text=السلام%20عليكم،%20أرغب%20في%20الاشتراك%20في%20حلقة%20تجريبية%20مجانية"
         target="_blank"
@@ -53,7 +53,7 @@ export default function Services() {
       >
         تجربة مجانية
         <i className="bi bi-whatsapp" />
-      </a>
+      </a> */}
     </div>
   );
 

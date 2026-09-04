@@ -19,13 +19,13 @@ const SERVICE_LINKS = [
 const SOCIALS = [
   { icon: "bi-whatsapp", href: "https://wa.me/201026858283", label: "واتساب" },
   { icon: "bi-whatsapp", href: "https://wa.me/201030228494", label: "واتساب" },
-  { icon: "bi-instagram", href: "#", label: "إنستجرام" },
+  //{ icon: "bi-instagram", href: "#", label: "إنستجرام" },
   {
     icon: "bi-facebook",
     href: "https://www.facebook.com/share/1HwQcPGfQc/?mibextid=qi2Omg",
     label: "فيسبوك",
   },
-  { icon: "bi-youtube", href: "#", label: "يوتيوب" },
+  // { icon: "bi-youtube", href: "#", label: "يوتيوب" },
 ];
 
 export default function Footer() {
@@ -140,14 +140,14 @@ export default function Footer() {
                   +20 103 022 8494
                 </a>
               </li>
-              <li className={styles.contactItem}>
+              {/* <li className={styles.contactItem}>
                 <span className={styles.contactIcon}>
                   <i className="bi bi-envelope" />
                 </span>
                 <a href="mailto:info@rawdat-alquran.com">
                   info@rawdat-alquran.com
                 </a>
-              </li>
+              </li> */}
               <li className={styles.contactItem}>
                 <span className={styles.contactIcon}>
                   <i className="bi bi-geo-alt" />
@@ -159,7 +159,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.bottom} dir="ltr">
-          <span>© {year} دار روضة القران. جميع الحقوق محفوظة.</span>
+          <span>© {year} دار روضة القران | جميع الحقوق محفوظة </span>
         </div>
       </div>
     </footer>

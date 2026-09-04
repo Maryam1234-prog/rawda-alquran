@@ -33,7 +33,7 @@ const ITEMS = Array.from({ length: 52 }, (_, index) => {
 
 const FILTERS = ["الكل", "one", "two", "three", "four"];
 
-const ITEMS_PER_PAGE = 10;
+const ITEMS_PER_PAGE = 12;
 
 export default function Achievements() {
   const [activeFilter, setActiveFilter] = useState("الكل");
