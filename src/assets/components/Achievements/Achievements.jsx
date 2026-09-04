@@ -13,13 +13,13 @@ const ITEMS = Array.from({ length: 52 }, (_, index) => {
   let category;
 
   if (id >= 1 && id <= 18) {
-    category = "حفظ";
+    category = "one";
   } else if (id >= 19 && id <= 33) {
-    category = "إجازات";
+    category = "two";
   } else if (id >= 31 && id <= 41) {
-    category = "فعاليات";
+    category = "three";
   } else {
-    category = "شهادات";
+    category = "four";
   }
 
   return {
@@ -31,7 +31,7 @@ const ITEMS = Array.from({ length: 52 }, (_, index) => {
   };
 });
 
-const FILTERS = ["الكل", "حفظ", "إجازات", "فعاليات", "شهادات"];
+const FILTERS = ["الكل", "one", "two", "three", "four"];
 
 const ITEMS_PER_PAGE = 10;
 

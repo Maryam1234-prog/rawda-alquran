@@ -3,12 +3,11 @@ import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
 const NAV_LINKS = [
-  { label: "الرئيسية", href: "#home", active: true },
-  { label: "من نحن", href: "#about" },
-  { label: "الخدمات", href: "#services" },
-  { label: "الآراء", href: "#Gallery" },
-  { label: "لماذا نحن", href: "#OurFeatures" },
-  // { label: "الانجازات", href: "#Achievements" },
+  { label: "الرئيسية", href: "/#home", active: true },
+  { label: "من نحن", href: "/#about" },
+  { label: "الخدمات", href: "/#services" },
+  { label: "الآراء", href: "/#Gallery" },
+  { label: "لماذا نحن", href: "/#OurFeatures" },
   { label: "الانجازات", href: "/achievements" },
   { label: "تواصل معنا", href: "https://wa.me/201026858283" },
 ];
@@ -60,20 +59,6 @@ export default function Navbar() {
           </div>
         </a>
 
-        {/* Nav links */}
-        {/* <ul className={`${styles.rawdaNavLinks} ${open ? styles.open : ""}`}>
-          {NAV_LINKS.map((link) => (
-            <li key={link.label}>
-              <a
-                href={link.href}
-                className={link.active ? styles.active : ""}
-                onClick={() => setOpen(false)}
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul> */}
         <ul className={`${styles.rawdaNavLinks} ${open ? styles.open : ""}`}>
           {NAV_LINKS.map((link) => (
             <li key={link.label}>

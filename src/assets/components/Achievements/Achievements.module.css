@@ -357,6 +357,10 @@
   font-weight: 700;
   cursor: pointer;
   transition: all 0.2s ease;
+  -webkit-transition:;
+  -moz-transition:;
+  -ms-transition:;
+  -o-transition:;
 }
 
 .pageBtn:hover {
