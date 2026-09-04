@@ -1,7 +1,7 @@
 import styles from "./Footer.module.css";
 
 const QUICK_LINKS = [
-  { label: "الرئيسية", href: "#home", active: true },
+  { label: "الرئيسية", href: "/#home", active: true },
   { label: "من نحن", href: "/#about" },
   { label: "خدماتنا", href: "/#services" },
   { label: "الآراء", href: "/#Gallery" },
