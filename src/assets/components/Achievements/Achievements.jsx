@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 import styles from "./Achievements.module.css";
 
 // الصور الموجودة داخل public/Acheivments
@@ -39,7 +39,12 @@ export default function Achievements() {
   const [activeFilter, setActiveFilter] = useState("الكل");
   const [currentPage, setCurrentPage] = useState(1);
   const [lightboxIndex, setLightboxIndex] = useState(null);
-
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   const filtered = useMemo(
     () =>
       activeFilter === "الكل"
