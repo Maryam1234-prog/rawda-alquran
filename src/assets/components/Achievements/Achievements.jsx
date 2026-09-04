@@ -40,10 +40,14 @@ export default function Achievements() {
   const [currentPage, setCurrentPage] = useState(1);
   const [lightboxIndex, setLightboxIndex] = useState(null);
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    const timer = setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 300);
+
+    return () => clearTimeout(timer);
   }, []);
   const filtered = useMemo(
     () =>
